@@ -1,38 +1,11 @@
-![Eplus](https://www.agenciaeplus.com.br/wp-content/themes/eplus/images/agencia-eplus-n-logo.png)
+Para executar o projeto basta baixar o mesmo e abrir o arquivo "index.html"
 
-# E-Plus Frontend Challenge
+Inicialmente fiz um desenho em um caderninho para planejar como vou fazer este desenvolvimento, anotando também alguns entraves e dúvidas que seria necessário sanar antes de pular para o desenvolvimento.
 
-Seja bem-vindo ao E-Plus Front-end Challenge, considere este o primeiro passo para fazer parte de uma das melhores equipes de ecommerce e marketing digital do Brasil!
+O escopo do desafio parece ser reduzido para apenas uma página com produtos e manipulação de carrinho, porém com uma exigência adicional de responsividade para plataformas mobile
 
-Para completar o desafio com sucesso você precisará codificar o layout que segue no projeto, para isso será necessário consumir um json via xhttp que retornará uma lista de produtos na resposta do request e servirá para alimentar/manipular o mini-cart.
+Por questão de familiaridade, optei por utilizar o framework do bootstrap. Estudei o componente navbar deles para implementar o header já com responsividade.
 
-Então mãos a obra e bom challenge ;)
+Fazendo uso da fonte e dos ícones solicitados, montei uma primeira versão do header da página, incluindo um dropdown para o carrinho, que por enquanto apenas exibe a mensagem de que o carrinho está vazio. No interesse de dispôr responsividade, optei por ocultar as opções "lorem ipsum" dentro de um menu, que o próprio bootstrap proporciona
 
-## Design
-
-- O topo apresentado deve seguir o [seguinte design](https://projects.invisionapp.com/share/NARHXUS6HCF#/357617423_Eplus)
-- Baseado neste layout, faça uma adaptação responsiva para celulares.
-
-## Como realizar o teste
-
-- Faça um fork deste repositório em seu GitHub
-- Adicione ao Readme uma descrição de como executar seu projeto
-- Descreva as funcionalidades do seu desafio, nos conte tudo que fez! Se fez o desafio utilizando pré-processadores, por exemplo, pois usaremos estas informações para avaliá-lo. 
-- O ideal é que este challenge leve até 8h.
-- Faça commits parciais, para que possamos acompanhar o seu desenvolvimento.
-- Em caso de dúvidas, entre em contato com rodrigo.freitas@agenciaeplus.com.br ou nadia@agenciaeplus.com.br
-
-## Dicas
-
-- Os ícones usados, são todos do Material Design. https://material.io/icons/
-- A fonte utilizada é Montserrat (Está fonte se encontra no google fonts). 
-- Trabalhamos com clientes perfeccionistas, portanto tenha atenção com espaçamentos, tamanhos e estilos de fonte. 
-
-## Critérios de avaliação
-
-- Alcançar os objetivos propostos
-- Qualidade de código
-- Commits parciais, mostrando a linha de desenvolvimento
-- Boa descrição das funcionalidades do desafio
-- Fidelidade ao design proposto
-- Adaptação mobile
+Foram encontrados problemas na ordenação dos elementos do header em ambiente mobile, que procurei solucionar fazendo uso das classes .d-flex e .order-lg-1

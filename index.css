@@ -1,0 +1,31 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+
+.nav-link {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    color: black;
+}
+
+.navbar-brand img {
+    width: 85%;
+    height: auto;
+}
+
+.navbar-collapse .nav-item{
+    margin-right: 10px
+}
+
+.navbar .nav-item {
+    line-height: 1;
+    list-style: none;
+}
+
+.navbar-icons {
+    min-width: 190px;
+}
+
+
+.material-icons.md-18 { font-size: 18px; }
+.material-icons.md-24 { font-size: 24px; }
+.material-icons.md-36 { font-size: 36px; }
+.material-icons.md-48 { font-size: 48px; }
