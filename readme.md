@@ -9,3 +9,9 @@ Por questão de familiaridade, optei por utilizar o framework do bootstrap. Estu
 Fazendo uso da fonte e dos ícones solicitados, montei uma primeira versão do header da página, incluindo um dropdown para o carrinho, que por enquanto apenas exibe a mensagem de que o carrinho está vazio. No interesse de dispôr responsividade, optei por ocultar as opções "lorem ipsum" dentro de um menu, que o próprio bootstrap proporciona
 
 Foram encontrados problemas na ordenação dos elementos do header em ambiente mobile, que procurei solucionar fazendo uso das classes .d-flex e .order-lg-1
+
+Após isso finalizado, comecei a desenvolver o dropdown do carrinho, utilizando jQuery para buscar os dados do JSON. Tive problemas ao tentar obter estes dados localmente (um erro "jquery Access to XMLHttpRequest has been blocked by CORS policy local file"), portanto busquei direto do github, e não obtive problemas, e para dar prosseguimento optei por deixar assim por enquanto.
+
+Com o JSON em mãos, era só uma questão de iterar pelos itens, e adicioná-los a minha div do carrinho. Previamente a isso eu já havia montado um item de testes direto no HTML para já definir a estrutura do layout, portanto quando populei pelo jQuery, não obtive problemas. Para o nome truncado, criei uma função que substitui o final de qualquer string por uma elipse, e utilizei a função toLocaleString para formatar a somatória dos valores em um valor final.
+
+Após isto foi apenas questão de adicionar o "botão" de finalizar compra. Que não é bem um botão, mas uma div com estilo de cursor "pointer"
