@@ -50,7 +50,7 @@
     cursor: pointer;
 }
 #finish-purchase-content{
-    color:black;
+    color:white;
     line-height:50px;
 }
 
@@ -87,8 +87,31 @@ li {
     min-width: 190px;
 }
 
-
 .material-icons.md-18 { font-size: 18px; }
 .material-icons.md-24 { font-size: 24px; }
 .material-icons.md-36 { font-size: 36px; }
 .material-icons.md-48 { font-size: 48px; }
+
+@media screen and (max-width: 990px) {
+    .nav-link {
+        font-size: 28px;
+    }
+    .item-name {
+        font-size: 28px;
+    }
+    .item-quantity {
+        font-size: 28px;
+    }
+    .item-price {
+        font-size: 28px;
+    }
+    #total-text{
+        display:none;
+    }
+    #cart-total{
+        font-size: 28px;
+    }
+    #finish-purchase{
+        font-size: 28px;
+    }
+}

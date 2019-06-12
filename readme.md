@@ -14,4 +14,6 @@ Após isso finalizado, comecei a desenvolver o dropdown do carrinho, utilizando 
 
 Com o JSON em mãos, era só uma questão de iterar pelos itens, e adicioná-los a minha div do carrinho. Previamente a isso eu já havia montado um item de testes direto no HTML para já definir a estrutura do layout, portanto quando populei pelo jQuery, não obtive problemas. Para o nome truncado, criei uma função que substitui o final de qualquer string por uma elipse, e utilizei a função toLocaleString para formatar a somatória dos valores em um valor final.
 
-Após isto foi apenas questão de adicionar o "botão" de finalizar compra. Que não é bem um botão, mas uma div com estilo de cursor "pointer"
+Após isto foi apenas questão de adicionar o "botão" de finalizar compra. Que não é bem um botão, mas uma div com estilo de cursor "pointer".
+
+Testando o layout, percebi que em telas pequenas o site ficava muito ilegível, com textos muito pequenos, portanto fiz o uso da regra @media do CSS para aumentar o tamanho das fontes do site, também tomei a liberdade de ocultar o texto "Total do pedido" no carrinho, para evitar que o texto acabasse quebrando a linha.
